@@ -1,0 +1,62 @@
+I0212 23:11:26.581183 8209826048 main.py:36] Loading Dataset..............
+I0212 23:11:26.581629 8209826048 datasets.py:16] Preparing dataset idrid...
+I0212 23:11:26.583448 8209826048 datasets.py:43] Processed Data Found...
+/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/input_pipeline/datasets.py:176: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_train['Retinopathy grade'] =df_train['Retinopathy grade'].map(lambda x: 0 if x < 2 else 1)
+/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/input_pipeline/datasets.py:177: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_val['Retinopathy grade'] =df_val['Retinopathy grade'].map(lambda x: 0 if x < 2 else 1)
+I0212 23:11:27.414015 8209826048 main.py:57] Loading Model..............
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+ Number of Training Images: 94
+ Number of Test Images: 103
+I0212 23:11:27.435484 8209826048 train.py:75] Training Initiated..............
+Model: "custom"
+_________________________________________________________________
+ Layer (type)                Output Shape              Param #
+=================================================================
+ input_1 (InputLayer)        [(None, 256, 256, 3)]     0
+ conv2d (Conv2D)             (None, 256, 256, 32)      896
+ conv2d_1 (Conv2D)           (None, 254, 254, 32)      9248
+ max_pooling2d (MaxPooling2D  (None, 127, 127, 32)     0
+ )
+ batch_normalization (BatchN  (None, 127, 127, 32)     128
+ ormalization)
+ conv2d_2 (Conv2D)           (None, 127, 127, 64)      18496
+ conv2d_3 (Conv2D)           (None, 125, 125, 64)      36928
+ max_pooling2d_1 (MaxPooling  (None, 62, 62, 64)       0
+ 2D)
+ batch_normalization_1 (Batc  (None, 62, 62, 64)       256
+ hNormalization)
+ conv2d_4 (Conv2D)           (None, 62, 62, 128)       73856
+ conv2d_5 (Conv2D)           (None, 60, 60, 128)       147584
+ max_pooling2d_2 (MaxPooling  (None, 30, 30, 128)      0
+ 2D)
+ batch_normalization_2 (Batc  (None, 30, 30, 128)      512
+ hNormalization)
+ conv2d_6 (Conv2D)           (None, 30, 30, 256)       295168
+ conv2d_7 (Conv2D)           (None, 28, 28, 256)       590080
+ max_pooling2d_3 (MaxPooling  (None, 14, 14, 256)      0
+ 2D)
+ batch_normalization_3 (Batc  (None, 14, 14, 256)      1024
+ hNormalization)
+ conv2d_8 (Conv2D)           (None, 14, 14, 512)       1180160
+ conv2d_9 (Conv2D)           (None, 12, 12, 512)       2359808
+ max_pooling2d_4 (MaxPooling  (None, 6, 6, 512)        0
+ 2D)
+ batch_normalization_4 (Batc  (None, 6, 6, 512)        2048
+ hNormalization)
+ global_average_pooling2d (G  (None, 512)              0
+ lobalAveragePooling2D)
+ dropout (Dropout)           (None, 512)               0
+ dense (Dense)               (None, 64)                32832
+ dense_1 (Dense)             (None, 2)                 130
+=================================================================
+Total params: 4,749,154
+Trainable params: 4,747,170
+Non-trainable params: 1,984

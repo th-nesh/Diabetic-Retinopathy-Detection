@@ -1,0 +1,85 @@
+2023-02-12 23:03:51,810 INFO    StreamThr :45295 [internal.py:wandb_internal():87] W&B internal server running at pid: 45295, started at: 2023-02-12 23:03:51.809332
+2023-02-12 23:03:51,811 DEBUG   HandlerThread:45295 [handler.py:handle_request():139] handle_request: status
+2023-02-12 23:03:51,812 DEBUG   SenderThread:45295 [sender.py:send_request():317] send_request: status
+2023-02-12 23:03:51,813 DEBUG   SenderThread:45295 [sender.py:send():303] send: header
+2023-02-12 23:03:51,813 INFO    WriterThread:45295 [datastore.py:open_for_write():75] open: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/run-xib56zli.wandb
+2023-02-12 23:03:51,829 DEBUG   SenderThread:45295 [sender.py:send():303] send: run
+2023-02-12 23:03:52,427 DEBUG   HandlerThread:45295 [handler.py:handle_request():139] handle_request: check_version
+2023-02-12 23:03:52,428 INFO    SenderThread:45295 [dir_watcher.py:__init__():216] watching files in: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files
+2023-02-12 23:03:52,428 INFO    SenderThread:45295 [sender.py:_start_run_threads():928] run started: xib56zli with start time 1676239431.803068
+2023-02-12 23:03:52,428 DEBUG   SenderThread:45295 [sender.py:send():303] send: summary
+2023-02-12 23:03:52,429 INFO    SenderThread:45295 [sender.py:_save_file():1171] saving file wandb-summary.json with policy end
+2023-02-12 23:03:52,429 DEBUG   SenderThread:45295 [sender.py:send_request():317] send_request: check_version
+2023-02-12 23:03:52,550 DEBUG   HandlerThread:45295 [handler.py:handle_request():139] handle_request: run_start
+2023-02-12 23:03:52,558 DEBUG   HandlerThread:45295 [system_info.py:__init__():31] System info init
+2023-02-12 23:03:52,559 DEBUG   HandlerThread:45295 [system_info.py:__init__():46] System info init done
+2023-02-12 23:03:52,559 INFO    HandlerThread:45295 [system_monitor.py:start():150] Starting system monitor
+2023-02-12 23:03:52,559 INFO    SystemMonitor:45295 [system_monitor.py:_start():116] Starting system asset monitoring threads
+2023-02-12 23:03:52,559 INFO    HandlerThread:45295 [system_monitor.py:probe():171] Collecting system info
+2023-02-12 23:03:52,560 INFO    SystemMonitor:45295 [interfaces.py:start():168] Started cpu
+2023-02-12 23:03:52,560 DEBUG   HandlerThread:45295 [system_info.py:probe():195] Probing system
+2023-02-12 23:03:52,560 INFO    SystemMonitor:45295 [interfaces.py:start():168] Started disk
+2023-02-12 23:03:52,560 INFO    SystemMonitor:45295 [interfaces.py:start():168] Started gpuapple
+2023-02-12 23:03:52,564 INFO    SystemMonitor:45295 [interfaces.py:start():168] Started memory
+2023-02-12 23:03:52,566 INFO    SystemMonitor:45295 [interfaces.py:start():168] Started network
+2023-02-12 23:03:52,566 DEBUG   HandlerThread:45295 [system_info.py:_probe_git():180] Probing git
+2023-02-12 23:03:52,600 DEBUG   HandlerThread:45295 [system_info.py:_probe_git():188] Probing git done
+2023-02-12 23:03:52,600 DEBUG   HandlerThread:45295 [system_info.py:probe():241] Probing system done
+2023-02-12 23:03:52,600 DEBUG   HandlerThread:45295 [system_monitor.py:probe():180] {'os': 'macOS-13.2-arm64-arm-64bit', 'python': '3.9.13', 'heartbeatAt': '2023-02-12T22:03:52.560465', 'startedAt': '2023-02-12T22:03:51.796322', 'docker': None, 'cuda': None, 'args': ('--train', 'False'), 'state': 'running', 'program': '/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/main.py', 'codePath': 'diabetic_retinopathy/main.py', 'git': {'remote': 'https://github.tik.uni-stuttgart.de/iss/dl-lab-22w-team04.git', 'commit': '895ce49e81060a68a65b5830c2253f32bfbef4a7'}, 'email': 'st176497@stud.uni-stuttgart.de', 'root': '/Users/thinesh/Desktop/dl-lab-22w-team04', 'host': 's-8d3ae0e5.off.site.uni-stuttgart.de', 'username': 'thinesh', 'executable': '/Users/thinesh/miniforge3/bin/python3', 'cpu_count': 8, 'cpu_count_logical': 8, 'disk': {'total': 460.4317207336426, 'used': 427.8159484863281}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 16.0}}
+2023-02-12 23:03:52,601 INFO    HandlerThread:45295 [system_monitor.py:probe():181] Finished collecting system info
+2023-02-12 23:03:52,601 INFO    HandlerThread:45295 [system_monitor.py:probe():184] Publishing system info
+2023-02-12 23:03:52,601 DEBUG   HandlerThread:45295 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-02-12 23:03:52,601 DEBUG   HandlerThread:45295 [system_info.py:_save_pip():67] Saving pip packages done
+2023-02-12 23:03:52,601 DEBUG   HandlerThread:45295 [system_info.py:_save_conda():74] Saving list of conda packages installed into the current environment
+2023-02-12 23:03:53,434 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/wandb-summary.json
+2023-02-12 23:03:53,435 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/requirements.txt
+2023-02-12 23:03:53,435 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/conda-environment.yaml
+2023-02-12 23:03:57,445 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/conda-environment.yaml
+2023-02-12 23:03:57,530 DEBUG   HandlerThread:45295 [system_info.py:_save_conda():86] Saving conda packages done
+2023-02-12 23:03:57,531 INFO    HandlerThread:45295 [system_monitor.py:probe():186] Finished publishing system info
+2023-02-12 23:03:57,547 DEBUG   SenderThread:45295 [sender.py:send():303] send: files
+2023-02-12 23:03:57,547 INFO    SenderThread:45295 [sender.py:_save_file():1171] saving file wandb-metadata.json with policy now
+2023-02-12 23:03:57,608 DEBUG   HandlerThread:45295 [handler.py:handle_request():139] handle_request: stop_status
+2023-02-12 23:03:57,608 DEBUG   SenderThread:45295 [sender.py:send_request():317] send_request: stop_status
+2023-02-12 23:03:57,794 DEBUG   SenderThread:45295 [sender.py:send():303] send: telemetry
+2023-02-12 23:03:58,164 INFO    Thread-16 :45295 [upload_job.py:push():143] Uploaded file /var/folders/k8/pst4x92s7dg_nvp1t05vt1sc0000gn/T/tmpgar3uhmkwandb/xpsym9k1-wandb-metadata.json
+2023-02-12 23:03:58,445 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/wandb-metadata.json
+2023-02-12 23:03:58,445 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/output.log
+2023-02-12 23:04:00,451 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/output.log
+2023-02-12 23:04:01,344 INFO    HandlerThread:45295 [handler.py:handle_tbrecord():724] handling tbrecord: tbrecord {
+  log_dir: "/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/experiments/run_2023-02-12T23-03-50-534973/summary/train"
+  save: true
+}
+control {
+  relay_id: "6402c22b43c84903ba725732dc4731f8"
+}
+_info {
+  stream_id: "xib56zli"
+}
+
+2023-02-12 23:04:01,344 DEBUG   HandlerThread:45295 [config_util.py:dict_from_config_file():100] no default config file found in config-defaults.yaml
+2023-02-12 23:04:01,355 DEBUG   SenderThread:45295 [sender.py:send():303] send: tbrecord
+2023-02-12 23:04:01,355 INFO    HandlerThread:45295 [handler.py:handle_tbrecord():724] handling tbrecord: tbrecord {
+  log_dir: "/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/experiments/run_2023-02-12T23-03-50-534973/summary/val"
+  save: true
+}
+control {
+  relay_id: "6402c22b43c84903ba725732dc4731f8"
+}
+_info {
+  stream_id: "xib56zli"
+}
+
+2023-02-12 23:04:01,355 DEBUG   SenderThread:45295 [sender.py:send():303] send: tbrecord
+2023-02-12 23:04:02,529 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/output.log
+2023-02-12 23:04:04,797 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_modified():292] file/dir modified: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/output.log
+2023-02-12 23:04:04,811 DEBUG   SenderThread:45295 [sender.py:send():303] send: files
+2023-02-12 23:04:04,811 INFO    SenderThread:45295 [sender.py:_save_file():1171] saving file val/events.out.tfevents.1676239441.s-8d3ae0e5.off.site.uni-stuttgart.de.45279.1.v2 with policy live
+2023-02-12 23:04:04,811 DEBUG   SenderThread:45295 [sender.py:send():303] send: files
+2023-02-12 23:04:04,811 INFO    SenderThread:45295 [sender.py:_save_file():1171] saving file train/events.out.tfevents.1676239441.s-8d3ae0e5.off.site.uni-stuttgart.de.45279.0.v2 with policy live
+2023-02-12 23:04:05,304 INFO    Thread-21 :45295 [upload_job.py:push():143] Uploaded file /var/folders/k8/pst4x92s7dg_nvp1t05vt1sc0000gn/T/tmpgar3uhmkwandb/1e3hrngu-train/events.out.tfevents.1676239441.s-8d3ae0e5.off.site.uni-stuttgart.de.45279.0.v2
+2023-02-12 23:04:05,323 INFO    Thread-20 :45295 [upload_job.py:push():143] Uploaded file /var/folders/k8/pst4x92s7dg_nvp1t05vt1sc0000gn/T/tmpgar3uhmkwandb/r0v1lk5a-val/events.out.tfevents.1676239441.s-8d3ae0e5.off.site.uni-stuttgart.de.45279.1.v2
+2023-02-12 23:04:05,799 INFO    MainThread:45295 [internal.py:handle_exit():77] Internal process exited
+2023-02-12 23:04:05,804 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/train/events.out.tfevents.1676239441.s-8d3ae0e5.off.site.uni-stuttgart.de.45279.0.v2
+2023-02-12 23:04:05,804 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/val/events.out.tfevents.1676239441.s-8d3ae0e5.off.site.uni-stuttgart.de.45279.1.v2
+2023-02-12 23:04:05,804 INFO    Thread-13 :45295 [dir_watcher.py:_on_file_created():275] file/dir created: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230351-xib56zli/files/val

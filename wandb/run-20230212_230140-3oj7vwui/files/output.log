@@ -1,0 +1,43 @@
+ Number of Training Images: 94
+ Number of Test Images: 103
+I0212 23:01:45.804671 8209826048 main.py:36] Loading Dataset..............
+I0212 23:01:45.805286 8209826048 datasets.py:16] Preparing dataset idrid...
+I0212 23:01:45.807116 8209826048 datasets.py:43] Processed Data Found...
+/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/input_pipeline/datasets.py:176: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_train['Retinopathy grade'] =df_train['Retinopathy grade'].map(lambda x: 0 if x < 2 else 1)
+/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/input_pipeline/datasets.py:177: SettingWithCopyWarning:
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_val['Retinopathy grade'] =df_val['Retinopathy grade'].map(lambda x: 0 if x < 2 else 1)
+I0212 23:01:49.723196 8209826048 main.py:57] Loading Model..............
+[34m[1mwandb[39m[22m: [33mWARNING[39m When using several event log directories, please call `wandb.tensorboard.patch(root_logdir="...")` before `wandb.init`
+Traceback (most recent call last):
+  File "/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/main.py", line 90, in <module>
+    app.run(main)
+  File "/Users/thinesh/miniforge3/lib/python3.9/site-packages/absl/app.py", line 308, in run
+    _run_main(main, args)
+  File "/Users/thinesh/miniforge3/lib/python3.9/site-packages/absl/app.py", line 254, in _run_main
+    sys.exit(main(argv))
+  File "/Users/thinesh/miniforge3/lib/python3.9/site-packages/gin/config.py", line 1605, in gin_wrapper
+    utils.augment_exception_message_and_reraise(e, err_str)
+  File "/Users/thinesh/miniforge3/lib/python3.9/site-packages/gin/utils.py", line 41, in augment_exception_message_and_reraise
+    raise proxy.with_traceback(exception.__traceback__) from None
+  File "/Users/thinesh/miniforge3/lib/python3.9/site-packages/gin/config.py", line 1582, in gin_wrapper
+    return fn(*new_args, **new_kwargs)
+  File "/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/main.py", line 61, in main
+    trainer = Trainer(model, ds_train, ds_val, ds_info, run_paths,FLAGS.model_name)
+  File "/Users/thinesh/miniforge3/lib/python3.9/site-packages/gin/config.py", line 1605, in gin_wrapper
+    utils.augment_exception_message_and_reraise(e, err_str)
+  File "/Users/thinesh/miniforge3/lib/python3.9/site-packages/gin/utils.py", line 41, in augment_exception_message_and_reraise
+    raise proxy.with_traceback(exception.__traceback__) from None
+  File "/Users/thinesh/miniforge3/lib/python3.9/site-packages/gin/config.py", line 1582, in gin_wrapper
+    return fn(*new_args, **new_kwargs)
+  File "/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/train.py", line 38, in __init__
+    self.confusion_matrix = metrics.ConfusionMatrix()
+NameError: name 'metrics' is not defined
+  In call to configurable 'Trainer' (<class 'train.Trainer'>)
+  In call to configurable 'main' (<function main at 0x1051280d0>)

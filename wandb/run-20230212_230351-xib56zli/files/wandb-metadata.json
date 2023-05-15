@@ -1,0 +1,37 @@
+{
+    "os": "macOS-13.2-arm64-arm-64bit",
+    "python": "3.9.13",
+    "heartbeatAt": "2023-02-12T22:03:52.560465",
+    "startedAt": "2023-02-12T22:03:51.796322",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "--train",
+        "False"
+    ],
+    "state": "running",
+    "program": "/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/main.py",
+    "codePath": "diabetic_retinopathy/main.py",
+    "git": {
+        "remote": "https://github.tik.uni-stuttgart.de/iss/dl-lab-22w-team04.git",
+        "commit": "895ce49e81060a68a65b5830c2253f32bfbef4a7"
+    },
+    "email": "st176497@stud.uni-stuttgart.de",
+    "root": "/Users/thinesh/Desktop/dl-lab-22w-team04",
+    "host": "s-8d3ae0e5.off.site.uni-stuttgart.de",
+    "username": "thinesh",
+    "executable": "/Users/thinesh/miniforge3/bin/python3",
+    "cpu_count": 8,
+    "cpu_count_logical": 8,
+    "disk": {
+        "total": 460.4317207336426,
+        "used": 427.8159484863281
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 16.0
+    }
+}

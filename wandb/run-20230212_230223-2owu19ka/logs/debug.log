@@ -1,0 +1,27 @@
+2023-02-12 23:02:23,037 INFO    MainThread:44933 [wandb_setup.py:_flush():68] Configure stats pid to 44933
+2023-02-12 23:02:23,038 INFO    MainThread:44933 [wandb_setup.py:_flush():68] Loading settings from /Users/thinesh/.config/wandb/settings
+2023-02-12 23:02:23,038 INFO    MainThread:44933 [wandb_setup.py:_flush():68] Loading settings from /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/settings
+2023-02-12 23:02:23,038 INFO    MainThread:44933 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2023-02-12 23:02:23,038 INFO    MainThread:44933 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'diabetic_retinopathy/main.py', 'program': '/Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/main.py'}
+2023-02-12 23:02:23,038 INFO    MainThread:44933 [wandb_init.py:_log_setup():476] Logging user logs to /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230223-2owu19ka/logs/debug.log
+2023-02-12 23:02:23,038 INFO    MainThread:44933 [wandb_init.py:_log_setup():477] Logging internal logs to /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/wandb/run-20230212_230223-2owu19ka/logs/debug-internal.log
+2023-02-12 23:02:23,038 INFO    MainThread:44933 [wandb_init.py:init():516] calling init triggers
+2023-02-12 23:02:23,038 INFO    MainThread:44933 [wandb_init.py:init():519] wandb.init called with sweep_config: {}
+config: {}
+2023-02-12 23:02:23,038 INFO    MainThread:44933 [wandb_init.py:init():569] starting backend
+2023-02-12 23:02:23,038 INFO    MainThread:44933 [wandb_init.py:init():573] setting up manager
+2023-02-12 23:02:23,041 INFO    MainThread:44933 [backend.py:_multiprocessing_setup():102] multiprocessing start_methods=spawn,fork,forkserver, using: spawn
+2023-02-12 23:02:23,044 INFO    MainThread:44933 [wandb_init.py:init():580] backend started and connected
+2023-02-12 23:02:23,048 INFO    MainThread:44933 [wandb_init.py:init():658] updated telemetry
+2023-02-12 23:02:23,072 INFO    MainThread:44933 [wandb_init.py:init():693] communicating run to backend with 60 second timeout
+2023-02-12 23:02:23,482 INFO    MainThread:44933 [wandb_run.py:_on_init():2006] communicating current version
+2023-02-12 23:02:23,543 INFO    MainThread:44933 [wandb_run.py:_on_init():2010] got version response upgrade_message: "wandb version 0.13.10 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2023-02-12 23:02:23,543 INFO    MainThread:44933 [wandb_init.py:init():728] starting run threads in backend
+2023-02-12 23:02:28,553 INFO    MainThread:44933 [wandb_run.py:_console_start():1986] atexit reg
+2023-02-12 23:02:28,553 INFO    MainThread:44933 [wandb_run.py:_redirect():1844] redirect: SettingsConsole.WRAP_RAW
+2023-02-12 23:02:28,554 INFO    MainThread:44933 [wandb_run.py:_redirect():1909] Wrapping output streams.
+2023-02-12 23:02:28,554 INFO    MainThread:44933 [wandb_run.py:_redirect():1931] Redirects installed.
+2023-02-12 23:02:28,555 INFO    MainThread:44933 [wandb_init.py:init():765] run started, returning control to user process
+2023-02-12 23:02:32,318 INFO    MainThread:44933 [wandb_run.py:_tensorboard_callback():1299] tensorboard callback: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/experiments/run_2023-02-12T23-02-21-459695/summary/train, True
+2023-02-12 23:02:32,319 INFO    MainThread:44933 [wandb_run.py:_tensorboard_callback():1299] tensorboard callback: /Users/thinesh/Desktop/dl-lab-22w-team04/diabetic_retinopathy/experiments/run_2023-02-12T23-02-21-459695/summary/val, True
